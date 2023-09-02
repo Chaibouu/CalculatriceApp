@@ -1,5 +1,5 @@
 let entrer = document.querySelector('.entrer');
-let touche = document.querySelectorAll('.touche');
+let touche = document.querySelectorAll('.numero');
 let reset = document.querySelector('.reset');
 let del = document.querySelector('.delete');
 for (let i = 0; i < touche.length; i++) {
@@ -13,8 +13,12 @@ for (let i = 0; i < touche.length; i++) {
 reset.addEventListener('click', ()=>{
     entrer.innerHTML = '';
 })
+
 del.addEventListener('click', ()=>{
-
-})
-
-console.log(entrer);
+    let ent = entrer.innerHTML.split("");
+    if (ent.length > 0) {
+        ent.pop();
+        entrer.innerHTML = ent.join("");
+        console.log(entrer.innerHTML);
+    }
+});
