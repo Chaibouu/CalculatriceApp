@@ -33,17 +33,9 @@ del.addEventListener('click', ()=>{
 
 // la fonction pour addition 
 addition.addEventListener('click', ()=>{
-    // a = entrer.textContent;
-    // entrer.innerHTML = a;
-    // operateur = "+";
-    if (entrer.textContent!=="") {
-        a += parseFloat(entrer.textContent);
-        entrer.textContent="";
-    }
-    else{
-        a = parseFloat(entrer.textContent);
-    }
-    console.log(a);
+    a = entrer.textContent;
+    entrer.innerHTML = '';
+    operateur = "+";
 });
 
 // la fonction pour soustraction 
@@ -67,9 +59,8 @@ division.addEventListener('click', ()=>{
 // la fonction pour egal 
 egal.addEventListener('click', ()=>{
     b = entrer.textContent;
-    console.log(b);
     if(operateur=="+"){
-        entrer.innerText = a + parseFloat(b);
+        entrer.innerText = parseFloat(a) + parseFloat(b);
     }
     else if(operateur=="-"){
         entrer.innerText = parseFloat(a) - parseFloat(b);
