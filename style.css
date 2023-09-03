@@ -96,12 +96,12 @@ body{
     box-shadow: 0px 3px hsl(224, 28%, 35%);
 
 }
-.reset, .delete{
+.reset1, .delete1{
     background-color: hsl(185, 42%, 37%);
     box-shadow: 0px 3px hsl(224, 28%, 35%);
     color: hsl(0, 0%, 100%);;
 }
-.egal{
+.egal1{
     background-color:hsl(25, 98%, 40%);
     box-shadow: 0px 3px hsl(6, 70%, 34%);
     color: hsl(0, 0%, 100%);;

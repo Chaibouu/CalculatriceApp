@@ -113,6 +113,15 @@ themeun.forEach(element => {
                 tchcolor[i].classList.remove('touche3');
                 tchcolor[i].classList.add('touche1');
             }
+            del.classList.remove('delete2');
+            del.classList.remove('delete3');
+            del.classList.add('delete1');
+            reset.classList.remove('reset2');
+            reset.classList.remove('reset3');
+            reset.classList.add('reset1');
+            egal.classList.remove('egal2');
+            egal.classList.remove('egal3');
+            egal.classList.add('egal1');
         });
 })
 themedeux.forEach(element => {
@@ -135,6 +144,15 @@ themedeux.forEach(element => {
                 tchcolor[i].classList.remove('touche3');
                 tchcolor[i].classList.add('touche2');
             }
+            del.classList.remove('delete1');
+            del.classList.remove('delete3');
+            del.classList.add('delete2');
+            reset.classList.remove('reset1');
+            reset.classList.remove('reset3');
+            reset.classList.add('reset2');
+            egal.classList.remove('egal1');
+            egal.classList.remove('egal3');
+            egal.classList.add('egal2');
         });
 })
 themetrois.forEach(element => {
@@ -157,5 +175,14 @@ themetrois.forEach(element => {
                 tchcolor[i].classList.remove('touche1');
                 tchcolor[i].classList.add('touche3');
             }
+            del.classList.remove('delete1');
+            del.classList.remove('delete2');
+            del.classList.add('delete3');
+            reset.classList.remove('reset2');
+            reset.classList.remove('reset1');
+            reset.classList.add('reset3');
+            egal.classList.remove('egal1');
+            egal.classList.remove('egal2');
+            egal.classList.add('egal3');
         });
 })
