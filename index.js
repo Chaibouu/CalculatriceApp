@@ -31,21 +31,21 @@ del.addEventListener('click', ()=>{
     }
 });
 
-// egal.addEventListener('click', ()=>{
-//     try {
-//         entrer.innerHTML = eval(entrer.innerHTML);
-//     } catch (error) {
-//         entrer.innerHTML ="ERROR";
-//     }
-// })
-
-
 // la fonction pour addition 
 addition.addEventListener('click', ()=>{
-    a = entrer.textContent;
-    entrer.innerHTML = '';
-    operateur = "+";
+    // a = entrer.textContent;
+    // entrer.innerHTML = a;
+    // operateur = "+";
+    if (entrer.textContent!=="") {
+        a += parseFloat(entrer.textContent);
+        entrer.textContent="";
+    }
+    else{
+        a = parseFloat(entrer.textContent);
+    }
+    console.log(a);
 });
+
 // la fonction pour soustraction 
 soustraction.addEventListener('click', ()=>{
     a = entrer.textContent;
@@ -67,8 +67,9 @@ division.addEventListener('click', ()=>{
 // la fonction pour egal 
 egal.addEventListener('click', ()=>{
     b = entrer.textContent;
+    console.log(b);
     if(operateur=="+"){
-        entrer.innerText = parseFloat(a) + parseFloat(b);
+        entrer.innerText = a + parseFloat(b);
     }
     else if(operateur=="-"){
         entrer.innerText = parseFloat(a) - parseFloat(b);
