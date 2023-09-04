@@ -15,10 +15,15 @@ let tchcolor = document.querySelectorAll('.tchcolor');
 let tete = document.querySelector('.tete');
 let conteneur = document.querySelector('.conteneur');
 let bascule = document.querySelector('.bascule');
+let btn1 = document.querySelector('.btn1');
+let btn2 = document.querySelector('.btn2');
+let btn3 = document.querySelector('.btn3');
 
 let a =0;
 let b =0;
 let operateur;
+
+btn1.style.visibility = "visible";
 
 // Récupérer les entrer le l'écran
 for (let i = 0; i < touche.length; i++) {
@@ -95,6 +100,9 @@ egal.addEventListener('click', ()=>{
 
 themeun.forEach(element => {
         element.addEventListener('click', ()=>{
+            btn1.style.visibility = "visible";
+            btn2.style.visibility = "hidden";
+            btn3.style.visibility = "hidden";
             body.setAttribute('class', 'corps1');
             tete.classList.remove('tete2');
             tete.classList.remove('tete3');
@@ -126,6 +134,9 @@ themeun.forEach(element => {
 })
 themedeux.forEach(element => {
         element.addEventListener('click', ()=>{
+            btn1.style.visibility = "hidden";
+            btn2.style.visibility = "visible";
+            btn3.style.visibility = "hidden";
             body.setAttribute('class', 'corps2');
             tete.classList.remove('tete1');
             tete.classList.remove('tete3');
@@ -157,6 +168,9 @@ themedeux.forEach(element => {
 })
 themetrois.forEach(element => {
         element.addEventListener('click', ()=>{
+            btn1.style.visibility = "hidden";
+            btn2.style.visibility = "hidden";
+            btn3.style.visibility = "visible";
             body.setAttribute('class', 'corps3');
             tete.classList.remove('tete1');
             tete.classList.remove('tete2');
