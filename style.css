@@ -61,7 +61,7 @@ body{
     align-items: center;
 }
 .touche{
-    width: 70px;
+    width: 80px;
     height: 50px;
     display: flex;
     align-items : center;
@@ -73,7 +73,7 @@ body{
 .reset, .egal{
     background: red;
     grid-column: span 2;
-    width: 150px;
+    width: 170px;
 }
 
 /* Theme1 */
