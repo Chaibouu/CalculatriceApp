@@ -63,7 +63,8 @@ body{
     width: 15px;
 }
 .entrer{
-    width : 100%;
+    width : 400px;
+    overflow-x: scroll;
     border-radius: 15px;
     height : 90px;
     margin-bottom: 30px;

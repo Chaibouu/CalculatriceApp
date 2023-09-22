@@ -33,6 +33,7 @@ for (let i = 0; i < touche.length; i++) {
 }
 // la touche reset pour effacer la totalité du contenue de l'écran 
 reset.addEventListener('click', ()=>{
+    
     entrer.innerHTML = '';
 })
 
@@ -200,6 +201,3 @@ themetrois.forEach(element => {
             egal.classList.add('egal3');
         });
 })
-
-
-//commentaire
